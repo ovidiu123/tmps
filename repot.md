@@ -77,7 +77,7 @@ class VehicleFactory:
             return Bike()
         elif vehicle_type == "Truck":
             return Truck()
-
+---
 
 
 

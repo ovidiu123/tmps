@@ -60,7 +60,5 @@ The implementation consists of several modules that interact with each other. Be
 
 
 
-
-
-**## Conclusion**
+Conclusion
 This project successfully demonstrates the implementation of various Creational Design Patterns. The vehicle management system facilitates flexible and efficient creation of vehicle objects. By employing these design patterns, the code remains clean, maintainable, and scalable, which is essential for effective software development.

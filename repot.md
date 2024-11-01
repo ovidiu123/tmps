@@ -58,26 +58,6 @@ The following creational design patterns have been implemented in this project:
 
 The implementation consists of several modules that interact with each other. Below are snippets from the codebase that demonstrate the design patterns.
 
-### Config Manager (Singleton)
-```python
-class ConfigManager:
-    _instance = None
-
-    @staticmethod
-    def get_instance():
-        if ConfigManager._instance is None:
-            ConfigManager._instance = ConfigManager()
-        return ConfigManager._instance
-
-class VehicleFactory:
-    def create_vehicle(self, vehicle_type):
-        if vehicle_type == "Car":
-            return Car()
-        elif vehicle_type == "Bike":
-            return Bike()
-        elif vehicle_type == "Truck":
-            return Truck()
----
 
 
 

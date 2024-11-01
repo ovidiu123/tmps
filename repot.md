@@ -68,3 +68,23 @@ class ConfigManager:
         if ConfigManager._instance is None:
             ConfigManager._instance = ConfigManager()
         return ConfigManager._instance
+
+class VehicleFactory:
+    def create_vehicle(self, vehicle_type):
+        if vehicle_type == "Car":
+            return Car()
+        elif vehicle_type == "Bike":
+            return Bike()
+        elif vehicle_type == "Truck":
+            return Truck()
+
+
+class VehicleBuilder:
+    def __init__(self):
+        self.vehicle = Vehicle()
+
+    def set_type(self, vehicle_type):
+        self.vehicle.type = vehicle_type
+
+## Conclusion
+This project successfully demonstrates the implementation of various Creational Design Patterns. The vehicle management system facilitates flexible and efficient creation of vehicle objects. By employing these design patterns, the code remains clean, maintainable, and scalable, which is essential for effective software development.

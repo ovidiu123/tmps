@@ -79,12 +79,6 @@ class VehicleFactory:
             return Truck()
 
 
-class VehicleBuilder:
-    def __init__(self):
-        self.vehicle = Vehicle()
-
-    def set_type(self, vehicle_type):
-        self.vehicle.type = vehicle_type
 
 
 
